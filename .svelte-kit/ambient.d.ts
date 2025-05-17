@@ -27,8 +27,6 @@
  */
 declare module '$env/static/private' {
 	export const CLERK_SECRET_KEY: string;
-	export const DATABASE_URL: string;
-	export const DIRECT_URL: string;
 	export const ACLOCAL_PATH: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
@@ -155,6 +153,8 @@ declare module '$env/static/private' {
  */
 declare module '$env/static/public' {
 	export const PUBLIC_CLERK_PUBLISHABLE_KEY: string;
+	export const PUBLIC_SUPABASE_URL: string;
+	export const PUBLIC_SUPABASE_ANON_KEY: string;
 }
 
 /**
@@ -174,8 +174,6 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		CLERK_SECRET_KEY: string;
-		DATABASE_URL: string;
-		DIRECT_URL: string;
 		ACLOCAL_PATH: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
@@ -309,6 +307,8 @@ declare module '$env/dynamic/private' {
 declare module '$env/dynamic/public' {
 	export const env: {
 		PUBLIC_CLERK_PUBLISHABLE_KEY: string;
+		PUBLIC_SUPABASE_URL: string;
+		PUBLIC_SUPABASE_ANON_KEY: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }
