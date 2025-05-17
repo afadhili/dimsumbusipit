@@ -1,5 +1,1 @@
-<script lang="ts">
-  import { SignOutButton } from "svelte-clerk/client";
-</script>
-
-<SignOutButton />
+<h1>Admin</h1>
