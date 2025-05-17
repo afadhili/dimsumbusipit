@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "postinstall": "prisma generate",
+    "vercel-build": "prisma generate && prisma migrate deploy && vite build",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
