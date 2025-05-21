@@ -15,10 +15,6 @@
       href: "/products",
     },
     {
-      title: "Tentang Kami",
-      href: "/about",
-    },
-    {
       title: "Kontak",
       href: "/contact",
     },
